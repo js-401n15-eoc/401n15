@@ -23,11 +23,6 @@ Application development in the NodeJS ecosystem, including the writing of modula
 
 <!-- To Be Completed By Instructor -->
 
-<<<<<<< HEAD
-- Topic 1
-- Topic 2
-- ...
-=======
 ## 401 JS Kickoff
 
 > Introductions and Nerdy Facts
@@ -53,4 +48,3 @@ Application development in the NodeJS ecosystem, including the writing of modula
 - All about Node
 - Test Driven Development
 - Continuous Integration
->>>>>>> ef988502e1726e5c91f8ca0553a14b3562104b1d
