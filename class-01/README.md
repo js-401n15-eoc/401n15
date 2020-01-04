@@ -23,6 +23,34 @@ Application development in the NodeJS ecosystem, including the writing of modula
 
 <!-- To Be Completed By Instructor -->
 
+<<<<<<< HEAD
 - Topic 1
 - Topic 2
 - ...
+=======
+## 401 JS Kickoff
+
+> Introductions and Nerdy Facts
+
+### Who are you?
+
+### Brief History...
+
+### Why are you here?
+
+### 1 Nerdy or Geeky Fact!
+
+
+## Course Mechanics
+- Canvas
+- Calendar
+- Submissions and Re-Submissions
+- Grading
+- Expectations
+
+## Class 01
+- Deployment and Prework Review
+- All about Node
+- Test Driven Development
+- Continuous Integration
+>>>>>>> ef988502e1726e5c91f8ca0553a14b3562104b1d
