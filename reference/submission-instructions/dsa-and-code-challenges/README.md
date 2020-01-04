@@ -21,7 +21,7 @@
     * Run `npm run docs` in the root folder to generate your master documentation
     * This documentation will grow and become more useful over time as you develop more DSA implementations
   * Place your tests in a __tests__ folder within the module directory
-  
+
 ## Daily Code Challenges
 
 * Work in a folder called called `code-challenges` in your `data-structures-and-algorithms` repository
@@ -32,11 +32,12 @@
 * **Time-Box your code challenge to 1 hour each day**
   * :40 at the whiteboard with your partner
   * :20 composing your code and tests
-  
+
 ### Testing
- * Write a complete set of tests for all data structures
- * Your daily code challenges should also have tests as a means of running the actual code
- * Your tests must be running green on travis.com
+
+* Write a complete set of tests for all data structures
+* Your daily code challenges should also have tests as a means of running the actual code
+* Your tests must be running green on Github Actions
 
 ## To Submit Your DSA Lab or Challenge
 
@@ -52,6 +53,7 @@
     * For Code Challenges: A photograph of your whiteboard
 
 Your folder structure should look like this:
+
 ```
   data-structures-and-algorithms
     |__ docs
@@ -66,7 +68,3 @@ Your folder structure should look like this:
         │   └── linked-lists.test.js
         └── index.js
 ```
-
-
- 
-

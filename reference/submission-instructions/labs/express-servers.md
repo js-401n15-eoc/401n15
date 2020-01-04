@@ -18,7 +18,7 @@ Refer to the [Common Lab Submission Guide](README.md) for general guidelines and
 - For testing the server and routes, use `supergoose` to do end-to-end testing
   - What we're testing is not whether express works, but whether your routes are doing the correct things.
 - For APIs, use Dredd to make assertions about your API using your API Blueprint docs
-- Your tests must be running green on travis.com
+- Your tests must be running green on Github Actions
 
 ### Documentation
 

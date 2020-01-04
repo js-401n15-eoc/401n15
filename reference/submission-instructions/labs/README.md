@@ -39,13 +39,51 @@ Once you have a good visual and mental model of how the application works, break
 - **.gitignore** - contains a [robust](http://gitignore.io) `.gitignore` file
 - **.eslintrc** - contains the course linter configuration
 - **.eslintignore** - contains the course linter ignore configuration
-- **.travis.yml** - contains the instructions for travis-ci.com to run your tests
 - **package.json** - contains npm package configuration
   - create a `lint` script for running eslint (`eslint **/*.js`)
   - create a `test` script for running tests
   - create a `start` script for running your server
   - create a `deploy` script (optionally) to combine any of the above steps
 - **/\_\_tests\_\_/** - contains unit tests
+
+Setup "Github Actions" so that your code can be properly tested in Github as you make new pushes to your branches and pull requests to master
+
+- Click the `Actions` tab in your repository
+- Select `Node.js` as the workflow
+- Edit the .yml file as follows
+  - Note the changes to the `on:` key as well as the  `node-version`
+- Commit this change
+
+> Github will now run all of your automated tests (anything covered by `npm test` in your package.json) every time you push code to a branch or try to merge a pull request. In fact, it will block pull requests until your tests are all passing.
+
+```yml
+name: Node CI
+
+on: [push,pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: npm install, build, and test
+      run: |
+        npm ci
+        npm run build --if-present
+        npm test
+      env:
+        CI: true
+```
 
 ### Canvas Submission
 

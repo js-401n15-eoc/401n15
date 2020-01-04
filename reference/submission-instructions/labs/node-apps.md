@@ -11,7 +11,7 @@ Refer to the [Common Lab Submission Guide](README.md) for general guidelines and
 ### Testing
 
 - Write a complete set of tests for all functional units and modules
-- Your tests must be running green on travis.com
+- Your tests must be running green on Github Actions
 
 ### Documentation
 

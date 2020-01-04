@@ -23,15 +23,6 @@ Application development in the NodeJS ecosystem, including the writing of modula
 
 <!-- To Be Completed By Instructor -->
 
-- 401 JS Kickoff
-- Introductions and Nerdy Facts
-- Course Mechanics
-  - Canvas
-  - Calendar
-  - Submissions and Re-Submissions
-  - Grading
-  - Expectations
-- Deployment and Prework Review
-- All about Node
-- Test Driven Development
-- Continuous Integration
+- Topic 1
+- Topic 2
+- ...
