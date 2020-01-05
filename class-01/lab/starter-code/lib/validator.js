@@ -10,6 +10,15 @@ let validator = module.exports = {};
  * @returns {boolean}
  */
 validator.isValid = (input, rules) => {
+  var fieldKeys = Object.keys(rules.fields);
+  var fieldVals = Object.values(rules.fields);
+  for (const i in fieldVals) {
+    const fieldKey = fieldKeys[i]
+    const fieldVal = fieldVals[i];
+    if (fieldVal.required && typeof input[fieldKey] !== fieldVal.type) {
+      return false;
+    }
+  }
   return true;
 };
 
@@ -22,4 +31,22 @@ validator.isString = (input) => {
   return typeof input === 'string';
 };
 
+validator.isNumber = (input) => {
+  return typeof input === 'number';
+};
 
+validator.isArray = (input) => {
+  return Array.isArray(input);
+};
+
+validator.isObject = (input) => {
+  return typeof input === 'object';
+};
+
+validator.isFunction = (input) => {
+  return typeof input === 'function';
+};
+
+validator.isBoolean = (input) => {
+  return typeof input === 'boolean';
+};
