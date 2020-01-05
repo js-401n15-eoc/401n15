@@ -10,6 +10,15 @@ let validator = module.exports = {};
  * @returns {boolean}
  */
 validator.isValid = (input, rules) => {
+  var fieldKeys = Object.keys(rules.fields);
+  var fieldVals = Object.values(rules.fields);
+  for (var field in fields) {
+    for (var prop in field) {
+      if (prop.required && typeof input.field !== field.type) {
+        return false;
+      }
+    }
+  }
   return true;
 };
 

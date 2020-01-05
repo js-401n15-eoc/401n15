@@ -1,6 +1,7 @@
 'use strict';
 
 const validator = require('./lib/validator.js');
+
 const personRules = {
   fields: {
     id: { type: 'string', required: true },
