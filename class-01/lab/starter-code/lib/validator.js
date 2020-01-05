@@ -12,11 +12,11 @@ let validator = module.exports = {};
 validator.isValid = (input, rules) => {
   var fieldKeys = Object.keys(rules.fields);
   var fieldVals = Object.values(rules.fields);
-  for (var field in fields) {
-    for (var prop in field) {
-      if (prop.required && typeof input.field !== field.type) {
-        return false;
-      }
+  for (const i in fieldVals) {
+    const fieldKey = fieldKeys[i]
+    const fieldVal = fieldVals[i];
+    if (fieldVal.required && typeof input[fieldKey] !== fieldVal.type) {
+      return false;
     }
   }
   return true;

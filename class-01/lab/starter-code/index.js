@@ -7,6 +7,11 @@ const personRules = {
     id: { type: 'string', required: true },
     name: { type: 'string', required: true },
     age: { type: 'number', required: true },
+    hair: { type: 'object', required: false,
+      color: { type: 'string', required: true },
+      length: { type: 'string', required: true },
+
+    },
     children: { type: 'array', valueType: 'string' },
   },
 };
